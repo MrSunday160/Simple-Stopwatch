@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="#0F9D58"
+        android:paddingTop="200dp"
+        tools:context="com.example.stopwatchapp.MainActivity">
+
+
+    <TextView
+
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textSize="40sp"
+            android:layout_margin="16dp"
+
+            />
+
+<!--    start button-->
+    <Button
+
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+
+            android:onClick="onClickStart"
+            android:text="@string/start" />
+
+<!--   stop button -->
+    
+    <Button
+
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+
+            android:onClick="onClickStop"
+            android:text="@string/stop"
+
+            />
+
+<!--    reset button-->
+
+    <Button
+
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+
+            android:onClick="onClickReset"
+            android:text="@string/reset"
+
+            />
+
+</LinearLayout>
